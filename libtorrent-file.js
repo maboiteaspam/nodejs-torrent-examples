@@ -7,11 +7,11 @@ s = new lt.session();
 s.start_dht();
 s.listen_on([6881, 6889]);
 
-ti = new lt.torrent_info("./test.torrent");
+ti = new lt.torrent_info("./FreeBSD-10.1-RELEASE-i386-dvd1.iso.torrent");
 
 th = s.add_torrent({
   ti: ti,
-  save_path: "./test_torrent"
+  save_path: "./FreeBSD"
 });
 
 main = function() {
