@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-torrent-examples",
+  "version": "1.0.0",
+  "description": "examples of various node lib torrent libraries to test and try about bittorrent",
+  "main": "main.js",
+  "dependencies": {
+    "bittorrent-tracker": "^2.7.0",
+    "node-bittorrent-tracker": "^0.0.1",
+    "node-libtorrent": "^0.0.2",
+    "parse-torrent": "^2.1.2",
+    "progress": "^1.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maboiteaspam",
+  "license": "MIT"
+}
+
