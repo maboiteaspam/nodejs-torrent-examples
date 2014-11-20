@@ -4,6 +4,10 @@ var lt, main, s, th, ti;
 lt = require("node-libtorrent/build/Release/libtorrent");
 
 s = new lt.session();
+var session_settings = s.settings();
+session_settings.ignore_limits_on_local_network = false;
+session_settings.allow_multiple_connections_per_ip = true;
+s.set_settings(session_settings);
 
 s.start_dht();
 s.listen_on([6881, 6889]);
